@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212632;
+}
+
+.attribution {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: #303a49;
+  width: 550px;
+  height: 330px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 18% auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.number-advice {
+  color: #54feab;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.advice {
+  padding: 1%;
+  color: #fff;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.separator {
+  position: absolute;
+  bottom: 55px;
+  left: 10%;
+}
+
+.button-container {
+  position: absolute;
+  bottom: -28px;
+  left: 45.5%;
+}
+
+.advice-button:hover {
+  background-color: #5ee3a3;
+  box-shadow: 0 0 20px rgba(0, 255, 168, 0.9);
+}
+
+.dice {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.4s ease;
+}
+
+.advice-button {
+  background-color: #54feab;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 255, 168, 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dice-roll {
+  animation: roll 0.3s linear;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 344px;
+    height: 330px;
+    margin: 46% auto;
+  }
+
+  .separator-mobile {
+    position: relative;
+    bottom: -17px;
+    left: -2%;
+  }
+
+  .button-container {
+    left: 43.5%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 344px;
+    height: 330px;
+    margin: 46% auto;
+  }
+
+  .separator-mobile {
+    position: relative;
+    bottom: -17px;
+    left: -2%;
+  }
+
+  .button-container {
+    left: 43.5%;
+  }
+}

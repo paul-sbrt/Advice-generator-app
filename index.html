@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Advice generator app</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="number-advice">ADVICE #<span id="advice-number">1</span></p>
+      <p class="advice" id="advice-text"></p>
+      <picture class="separator">
+        <!-- Image pour les petits écrans -->
+        <source
+          media="(max-width: 430px)"
+          srcset="./images/pattern-divider-mobile.svg"
+        />
+        <!-- Image pour les grands écrans -->
+        <img
+          class="separator-mobile"
+          src="./images/pattern-divider-desktop.svg"
+          alt="Image de séparation"
+        />
+      </picture>
+
+      <div class="button-container">
+        <button class="advice-button">
+          <img class="dice" src="./images/icon-dice.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Paul Sabourault</a>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
